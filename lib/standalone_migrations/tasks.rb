@@ -19,7 +19,6 @@ module StandaloneMigrations
         ).each do
           |task| load "standalone_migrations/tasks/#{task}.rake"
         end
-        load "active_record/railties/databases.rake"
       end
     end
   end
